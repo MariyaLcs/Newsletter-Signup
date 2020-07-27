@@ -75,10 +75,10 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet" />
+    <link href="/css/signin.css" rel="stylesheet" />
   </head>
   <body class="text-center">
-    <form class="form-signin">
+    <form action="/" class="form-signin" method="POST">
       <img
         class="mb-4"
         src="/image/chillies.png"
@@ -92,6 +92,7 @@
         type="text"
         class="form-control top"
         placeholder="First Name"
+        name="fName"
         required
         autofocus
       />
@@ -99,15 +100,17 @@
         type="text"
         class="form-control middle"
         placeholder="Last Name"
+        name="lName"
         required
       />
       <input
         type="email"
         class="form-control bottom"
         placeholder="Email required"
+        name="email"
       />
 
-      <button class="btn btn-lg btn-primary btn-block" type="submit">
+      <button class="btn btn-lg btn-danger btn-block text-dark" type="submit">
         Sign Me Up!
       </button>
       <p class="mt-5 mb-3 text-muted">&copy; Made by Masha</p>
